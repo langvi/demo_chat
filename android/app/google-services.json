@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "461122916904",
+    "project_id": "dda-shop-fd8b0",
+    "storage_bucket": "dda-shop-fd8b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461122916904:android:51a94718a1fe9e806f1b1d",
+        "android_client_info": {
+          "package_name": "com.example.demo_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461122916904-bi6quhro7hb9nau1ace4h0mtlsovh85j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv-q3FShWruqtgIy2keR3ENBk-zwPbfeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461122916904-bi6quhro7hb9nau1ace4h0mtlsovh85j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

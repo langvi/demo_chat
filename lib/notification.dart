@@ -1,9 +1,11 @@
 // import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 import 'package:awesome_notifications/awesome_notifications.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 class NotificationApp {
   static bool enableNoti = false;
+  static FirebaseMessaging messaging = FirebaseMessaging.instance;
   // FirebaseMessaging messaging = FirebaseMessaging.instance;
   // static final localNotification = FlutterLocalNotificationsPlugin();
   static Future<void> initNotification() async {
@@ -25,6 +27,13 @@ class NotificationApp {
       await AwesomeNotifications().requestPermissionToSendNotifications();
     } else {
       enableNoti = true;
+      final token = await messaging.getToken();
+      print(token);
+      FirebaseMessaging.onMessage.listen((result) {
+        // final title = result.notification?.title ?? '';
+        // final body = result.notification?.body ?? '';
+        // showMessageNoti(title, body);
+      });
       AwesomeNotifications().actionStream.listen((data) {
         print(data);
       });
